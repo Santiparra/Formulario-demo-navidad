@@ -51,13 +51,14 @@
 
 .logo img{
     height: 9vh;
-    background-color: var(--backG-color);
-    opacity: 0.78;
+    /* background-color: var(--backG-color); */
+    /* opacity: 0.78; */
 }
 
 .logo h1 {
     font-family: var(--font2);
-    background-color: var(--backG-color);
+    font-size: 4rem;
+    /* background-color: var(--backG-color); */
     color: var(--sec-color);
 }
 
@@ -66,10 +67,7 @@
 }
   
 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    font-family: var(--font1);
     background-color: var(--main-color);
     border: 1px solid var(--border-color);
     border-radius: 3px;
@@ -81,15 +79,15 @@
 .text h1 {
     font-size: 20px;
     margin-bottom: 20px;
+    font-family: var(--font2);
   }
 
-.regalos {
+.christmas-form {
     background-color: var(--main-color);
     border: 1px solid var(--border-color);
     border-radius: 3px;
     width: 80vh;
     padding: 50px;
-    margin: 0 0 40px 0;
 }  
 
 .input {
@@ -152,7 +150,7 @@
     border: 1px solid var(--border-color);
     border-radius: 3px;
     min-height: 200px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     padding: 7px;
     resize: none;
   }
@@ -176,7 +174,7 @@
     border-radius: 3px;
     padding: 10px 40px;
     cursor: pointer;
-  }
+}
   
 .input button:hover {
     background-color: darkblue;
@@ -188,19 +186,19 @@
 
 @media only screen and (min-width: 700px) {
     .right-side,
-    .christmas-form {
-         width: 600px;
+    .regalos {
+        width: 60vw;
     }
     .input {
-         flex-direction: row;
-         align-items: flex-start;
-         margin-bottom: 20px;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
     }
     .input textarea,
     .input input[type="email"],
     .input input[type="text"] {
-         width: 250px;
-         height: initial;
+        width: 250px;
+        height: initial;
     }
     .input label {
        text-align: right;
@@ -229,4 +227,5 @@
     }
     .input button {
         margin-left: 120px;
+}
 }
