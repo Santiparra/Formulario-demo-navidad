@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" href="css/style.css">
         
         <title>Formularios - Demo</title>
@@ -12,43 +13,44 @@
     <body>
         <div class="entero">
             <div class="left-side">
+                <div class="fondo">
+                    <img class="papanoel" src="img/papaNoel.png" alt="Papá Noel">
+                </div>
                 <div class="logo">
-                    <img src="img/papaNoel.png" alt="La cara de Papá Noel">
-                    <div class="about">
-                        <img src="img/arblolnav.svg" alt="Un árbol de Navidad">
-                        <h1></h1>
-                    </div>
+                    <img src="img/duende.svg" alt="Un árbol de Navidad">
+                    <h1>Santa Mail</h1>
                 </div>
             </div>
             <div class="right-side">
-                <div class="text"></div>
-                <div class="form">
+                <div class="text">
+                    <h1>Use Santa Mail</h1>
+                    <p><em>Santa Mail le permite hablar directamente con Papá Noel y solicitarle directamente que es lo que Ud. quiere estas navidades. Advertencia, si Ud. se porto mal este año existe la posibilidad de que Papá Noel le traiga lo que se le antoje.</em></p>
+                </div>
+                <div class="christmas-form">
                     <form action="#" class="regalos">
-                        <div class="input"><label for="primer-nombre">Primer Nombre</label><input title="Los nombres solo llevan letras con un mínimo de 3 caracteres y máximo de 16" placeholder="Juan" minlength="3" maxlength="16" type="text" name="primer-nombre" id="primer-nombre" required></div>
-                        <div class="input"><label for="apellido">Apellido</label><input title="Los apellidos solo llevan letras con un mínimo de 3 caracteres y máximo de 20" placeholder="Perez" minlength="3" maxlength="20" type="text" name="apellido" id="apellido" required></div>
-                        <div class="input"><label for="email">Email</label><input type="email" name="email" id="email" placeholder="mimail@ejemplo.com" required></div>
-                        <div class="input"><label for="edad">Edad</label><input title="La edad solo puede contener números entre 0 y 99" placeholder="31" minlength="1" maxlength="2" type="text" name="edad" id="edad" required></div>
+                        <div class="input"><label for="primer-nombre">Primer Nombre:</label><input title="Los nombres solo llevan letras con un mínimo de 3 caracteres y máximo de 16" placeholder="Juan" minlength="3" maxlength="16" type="text" name="primer-nombre" id="primer-nombre" required></div>
+                        <div class="input"><label for="apellido">Apellido:</label><input title="Los apellidos solo llevan letras con un mínimo de 3 caracteres y máximo de 20" placeholder="Perez" minlength="3" maxlength="20" type="text" name="apellido" id="apellido" required></div>
+                        <div class="input"><label for="email">Email:</label><input type="email" name="email" id="email" placeholder="mimail@ejemplo.com" required></div>
+                        <div class="input"><label for="edad">Edad:</label><input title="La edad solo puede contener números entre 0 y 99" placeholder="31" minlength="1" maxlength="2" type="text" name="edad" id="edad" required></div>
+                        <fieldset class="radio-bot-fila">
+                            <legend>Cómo te has comportado este año?</legend>
+                            <input id="te-portaste-bien" name="como-te-portaste" type="radio" value="Bien" checked/><label for="te-portaste-bien" class="radio-label">Bien</label>
+                            <input id="te-portaste-mal" name="como-te-portaste" type="radio" value="Mal"/><label for="te-portaste-mal" class="radio-label">Mal</label>
+                        </fieldset>
                         <div class="input">
-                            <fieldset class="radio-bot-fila">
-                                <legend>Cómo te has comportado este año?</legend>
-                                <input id="te-portaste-bien" name="como-te-portaste" type="radio" value="Bien" checked/>
-                                <label for="te-portaste-bien" class="radio-label">Bien</label>
-                                <input id="te-portaste-mal" name="como-te-portaste" type="radio" value="Mal"/>
-                                <label for="te-portaste-mal" class='radio-label'>Mal</label>
-                              </fieldset>
+                            <label for="abstract">Sobre ti:</label><textarea name="abstract" id="abstract" cols="30" rows="5" class="abstract">Cuéntanos, qué quieres pedirle a Papá Noel?</textarea>
+                            <div class="instrucciones">Qué quieres pedirle a Papá Noel?</div>
                         </div>
+                        <div class="input"><label class="checkbox-label" for="he-leido-los-terminos"><input type="checkbox" name="he-leido-los-terminos" id="he-leido-los-terminos" value="si" required><span>He leído los términos de este servicio</span></label></div>                
                         <div class="input">
-                            <label for="abstract">Sobre ti.</label><textarea name="abstract" id="abstract" cols="30" rows="10" class="abstract">Cuéntanos una buena acción que hayas realizado este año.</textarea>
-                            <div class="instrucciones">Cuéntanos una buena acción que hayas realizado este año.</div>
+                            <button type="submit">Enviar</button>
+                            <div class="texto-boton">
+                                <p></p>
+                                <a href="#link"></a>
+                        </div>    
                         </div>
-                        <div class="input"><label class="checkbox-label" for="he-leido-los-terminos"></label><input type="checkbox" name="he-leido-los-terminos" id="he-leido-los-terminos" value="si" required>He leído los términos de este servicio<span></span></div>                
+                    </form>    
                 </div>
-                <div class="lower">
-                    <button type="submit">Enviar</button>
-                    <p></p>
-                    <a href="#link"></a>
-                </div>
-                    </form>
             </div>
         </div>   
     </body>

@@ -1,6 +1,232 @@
-
-
-body {
-    font-family: 'Mountains of Christmas';font-size: 22px;
+:root {
+    --main-color: #F5FFFA;
+    --sec-color: #ffffff;
+    --aux-color: #db4233;
+    --backG-color: #000000;
+    --border-color: #A9A9A9;
+    --font-color: #000000;
+    --font1: "Roboto";
+    --font2: "Mountains of Christmas";
+    --font-fallback: "Inter,Helvetica Neue,Helvetica,Arial,sans-serif";
 }
-roboto
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.entero {
+    color: var(--font-color);
+    background-color: #8ba89a;
+    font-family: var(--font1);
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+}
+
+.left-side,
+.papanoel {
+    width: 40vw;
+    height: 100vh;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 12vh;
+    width: 40vw;
+    background-color: var(--backG-color);
+    opacity: 0.78;
+    color: var(--sec-color);
+    bottom: 20vh;
+    text-align: right;
+    font-size: 1.2em;
+    font-family: var(--font2);
+    padding: 8px;
+}
+
+.logo img{
+    height: 9vh;
+    background-color: var(--backG-color);
+    opacity: 0.78;
+}
+
+.logo h1 {
+    font-family: var(--font2);
+    background-color: var(--backG-color);
+    color: var(--sec-color);
+}
+
+.right-side {
+    margin-left: 1vh;
+}
+  
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-color);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    width: 80vh;
+    margin: 1vh 0;
+    padding: 10px;
+}
+  
+.text h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+.regalos {
+    background-color: var(--main-color);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    width: 80vh;
+    padding: 50px;
+    margin: 0 0 40px 0;
+}  
+
+.input {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  
+.input input[type="email"],
+.input input[type='text'],
+.input textarea {
+    background-color: var(--sec-color);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.input input[type='text']:invalid,
+.input input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; 
+}
+  
+.input label {
+    margin-bottom: 10px;
+}  
+
+.radio-bot-fila {
+    border: none;
+    margin-bottom: 20px;
+}
+  
+.radio-bot-fila legend {
+    margin-bottom: 12px;
+}
+  
+.radio-bot-fila .radio-label {
+    display: block;
+    font-size: 14px;
+    padding: 0 20px 0 10px;
+}
+  
+.radio-bot-fila input[type='radio'] {
+    margin-top: 2px;
+}
+    
+.radio-bot-fila .radio-label,
+.radio-bot-fila input[type='radio'] {
+    float: left;
+}
+
+.input textarea {
+    font-family: var(--font-fallback);
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  }
+  
+.input .instrucciones {
+    color: #6d6c6c;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.input .checkbox-label {
+    margin-bottom: 0;
+}
+
+.input button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: var(--aux-color);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+.input button:hover {
+    background-color: darkblue;
+}
+  
+.input button:active {
+    background-color: darkgreen;
+}
+
+@media only screen and (min-width: 700px) {
+    .right-side,
+    .christmas-form {
+         width: 600px;
+    }
+    .input {
+         flex-direction: row;
+         align-items: flex-start;
+         margin-bottom: 20px;
+    }
+    .input textarea,
+    .input input[type="email"],
+    .input input[type="text"] {
+         width: 250px;
+         height: initial;
+    }
+    .input label {
+       text-align: right;
+       width: 120px;
+       margin-top: 7px;
+       padding-right: 20px;
+    }
+    .radio-bot-fila {
+        margin-bottom: 10px;
+    }
+    .radio-bot-fila legend {
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+        
+    }
+    .radio-bot-fila legend {
+        float: left;
+    }
+    .input .instrucciones {
+        margin-left: 120px;
+    }
+    .input .checkbox-label {
+        margin-left: 120px;
+        width: auto;
+    }
+    .input button {
+        margin-left: 120px;
+}
