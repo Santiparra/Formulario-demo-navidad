@@ -57,13 +57,16 @@
 
 .logo h1 {
     font-family: var(--font2);
-    font-size: 4rem;
+    font-size: 2rem;
     /* background-color: var(--backG-color); */
     color: var(--sec-color);
 }
 
 .right-side {
-    margin-left: 1vh;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    background-color: #8ba89a;
 }
   
 .text {
@@ -71,7 +74,7 @@
     background-color: var(--main-color);
     border: 1px solid var(--border-color);
     border-radius: 3px;
-    width: 80vh;
+    width: auto;
     margin: 1vh 0;
     padding: 10px;
 }
@@ -80,9 +83,10 @@
     font-size: 20px;
     margin-bottom: 20px;
     font-family: var(--font2);
+    text-align: center;
   }
 
-.christmas-form {
+.regalos {
     background-color: var(--main-color);
     border: 1px solid var(--border-color);
     border-radius: 3px;
@@ -185,7 +189,7 @@
 }
 
 @media only screen and (min-width: 700px) {
-    .right-side,
+    .christmas-form,
     .regalos {
         width: 60vw;
     }
